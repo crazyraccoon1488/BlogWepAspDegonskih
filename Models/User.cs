@@ -23,7 +23,8 @@ namespace WebApplication1.Models
         public string Password { set; get; }
 
         [DisplayName("Дата регистрации")]
-        [Required]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}", ApplyFormatInEditMode = true)]
         public DateTime CurrentDate { set; get; }
     }
 }
