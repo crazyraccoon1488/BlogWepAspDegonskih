@@ -7,10 +7,11 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
+    <a>@Html.ActionLink("Домашняя страница", "Index", "Home")</a>
     <div class="form-horizontal">
         <h4>User</h4>
         <hr />

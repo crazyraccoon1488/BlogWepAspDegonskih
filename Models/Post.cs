@@ -26,6 +26,8 @@ namespace WebApplication1.Models
         public string TextComment { set; get; }
 
         [DisplayName("Дата создания")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}", ApplyFormatInEditMode = true)]
         [Required]
         public DateTime CurrentDate { set; get; }
 
