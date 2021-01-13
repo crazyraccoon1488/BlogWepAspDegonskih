@@ -34,5 +34,5 @@ namespace WebApplication1.Models
         [Required]
         public int IdCategory { set; get; }
         public Category Category { set; get; }
-
+    }
 }
