@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<WebApplication1.Models.Category>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Категории";
 }
 
-<h2>Index</h2>
+<h2>Категории</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Создать новую", "Create")
 </p>
 <table class="table">
     <tr>
@@ -23,9 +23,9 @@
             @Html.DisplayFor(modelItem => item.NameCategory)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdCategory }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdCategory }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdCategory })
+            @Html.ActionLink("Редактировать", "Edit", new { id=item.IdCategory }) |
+            @Html.ActionLink("Детали", "Details", new { id=item.IdCategory }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.IdCategory })
         </td>
     </tr>
 }

@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<WebApplication1.Models.Post>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Пост";
 }
 
-<h2>Index</h2>
+<h2>Посты</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="Create" class="btn btn-primary" role="button" aria-pressed="true">Создать новый</a>
 </p>
 <table class="table">
     <tr>
@@ -47,9 +47,9 @@
             @Html.DisplayFor(modelItem => item.CurrentDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Редактирование", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Детали", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.Id })
         </td>
     </tr>
 }

@@ -1,10 +1,10 @@
 ﻿@model WebApplication1.Models.User
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Создание пользователя";
 }
 
-<h2>Create</h2>
+<h2>Создание пользователя</h2>
 
 
 @using (Html.BeginForm())
@@ -13,7 +13,7 @@
 
     <a>@Html.ActionLink("Домашняя страница", "Index", "Home")</a>
     <div class="form-horizontal">
-        <h4>User</h4>
+        <h4>Пользователь</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -57,7 +57,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Назад", "Index")
 </div>
 
 @section Scripts {
